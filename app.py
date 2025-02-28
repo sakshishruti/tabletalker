@@ -17,7 +17,7 @@ def initialize_session_state():
 
 def display_chat(conversation_chain, chain):
     """
-    Streamlit relatde code where we are passing conversation_chain instance created earlier
+    Streamlit related code where we are passing conversation_chain instance created earlier
     It creates two containers
     container: To group our chat input form
     reply_container: To group the generated chat response
@@ -28,7 +28,7 @@ def display_chat(conversation_chain, chain):
     #In Streamlit, a container is an invisible element that can hold multiple 
     #elements together. The st.container function allows you to group multiple 
     #elements together. For example, you can use a container to insert multiple 
-    #elements into your app out of order.
+    #elements into your app that are out of order.
     reply_container = st.container()
     container = st.container()
 
