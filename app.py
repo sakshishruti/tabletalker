@@ -28,7 +28,7 @@ def display_chat(conversation_chain, chain):
     #In Streamlit, a container is an invisible element that can hold multiple 
     #elements together. The st.container function allows you to group multiple 
     #elements together. For example, you can use a container to insert multiple 
-    #elements into your app that are out of order.
+    #elements that are out of order into your app.
     reply_container = st.container()
     container = st.container()
 
@@ -37,7 +37,7 @@ def display_chat(conversation_chain, chain):
             user_input = st.text_input("Question:", placeholder="Ask me questions from uploaded PDF", key='input')
             submit_button = st.form_submit_button(label='Send ⬆️')
         
-        #Check if user submit question with user input and generate response of the question
+        #Check if user submits question with user input and generates response of the question
         if submit_button and user_input:
             generate_response(user_input, conversation_chain, chain)
     
@@ -47,7 +47,7 @@ def display_chat(conversation_chain, chain):
 
 def generate_response(user_input, conversation_chain, chain):
     """
-    Generate LLM response based on the user question by retrieving data from Database
+    Generate LLM response based on the user question by retrieving data from the Database
     Also, stores information to streamlit session states 'past' and 'generated' so that it can
     have memory of previous generation for converstational type of chats (Like chatGPT)
 
