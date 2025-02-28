@@ -48,8 +48,8 @@ def display_chat(conversation_chain, chain):
 def generate_response(user_input, conversation_chain, chain):
     """
     Generate LLM response based on the user question by retrieving data from the Database
-    Also, stores information to streamlit session states 'past' and 'generated' so that it can
-    have memory of previous generation for converstational type of chats (Like chatGPT)
+    Also, stores information to the streamlit session states 'past' and 'generated' so that it can
+    have the memory of the previous generation for conversational type of chats (like ChatGPT)
 
     Args
     - user_input(str): User input as a text
@@ -95,7 +95,7 @@ def display_generated_responses(reply_container):
 
 def main():
     """
-    First function to call when we start streamlit app
+    First function to call when we start the streamlit app
     """
     # Step 1: Initialize session state
     initialize_session_state()
